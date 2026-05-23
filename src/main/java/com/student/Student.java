@@ -23,11 +23,11 @@ public class Student {
         this.yearLevel = new SimpleStringProperty(yearLevel);
     }
 
-    // --- plain getters (used by JDBC / business logic) ---
     public int    getId()        { return id.get(); }
     public String getName()      { return name.get(); }
     public String getCourse()    { return course.get(); }
     public String getYearLevel() { return yearLevel.get(); }
+
 
     public IntegerProperty idProperty()        { return id; }
     public StringProperty  nameProperty()      { return name; }

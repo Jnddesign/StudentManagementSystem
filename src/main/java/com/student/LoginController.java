@@ -14,8 +14,6 @@ public class LoginController {
     @FXML private PasswordField txtPassword;
     @FXML private Label         lblError;
 
-    // ── Hardcoded credentials (loaded from config.properties via AppConfig) ──
-    // You can change these in config.properties without touching this file.
     private static final String VALID_USERNAME = AppConfig.get("app.username");
     private static final String VALID_PASSWORD = AppConfig.get("app.password");
 

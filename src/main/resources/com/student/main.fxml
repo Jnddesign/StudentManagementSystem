@@ -114,4 +114,5 @@
     <Label text="💡 Tip: Click a row to select it, then edit the fields and press Update or Delete."
            style="-fx-font-size: 11px; -fx-text-fill: #78909c;"/>
 
+
 </VBox>

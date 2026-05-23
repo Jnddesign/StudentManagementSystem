@@ -23,7 +23,6 @@ public class AppConfig {
             System.err.println("❌ Failed to load config.properties: " + e.getMessage());
         }
     }
-
     public static String get(String key) {
         return props.getProperty(key, "");
     }

@@ -12,7 +12,6 @@ import java.sql.ResultSet;
 
 public class Controller {
 
-    // ── FXML-injected controls ───────────────────────────────────────────────
     @FXML private TextField              txtName;
     @FXML private TextField              txtCourse;
     @FXML private ChoiceBox<YearLevel>   cbYear;

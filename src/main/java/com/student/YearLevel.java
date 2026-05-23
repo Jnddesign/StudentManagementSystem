@@ -16,7 +16,6 @@ public enum YearLevel {
             default:          return "";
         }
     }
-
     public static YearLevel fromString(String text) {
         for (YearLevel y : values()) {
             if (y.toString().equals(text)) return y;
