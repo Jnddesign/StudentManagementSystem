@@ -5,10 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/**
- * Entry point — launches the Login window first.
- * After successful login, LoginController opens the main window.
- */
 public class MainApp extends Application {
 
     @Override

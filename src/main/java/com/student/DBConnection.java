@@ -3,10 +3,7 @@ package com.student;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-/**
- * Opens a JDBC connection to PostgreSQL.
- * Credentials are loaded from config.properties via AppConfig — no hardcoding!
- */
+
 public class DBConnection {
 
     public static Connection connect() {

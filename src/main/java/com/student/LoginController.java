@@ -8,10 +8,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-/**
- * Controller for login.fxml
- * Validates credentials and opens the main Student Management window.
- */
 public class LoginController {
 
     @FXML private TextField     txtUsername;

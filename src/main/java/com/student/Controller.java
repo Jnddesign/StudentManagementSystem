@@ -9,10 +9,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-/**
- * JavaFX Controller for main.fxml.
- * Handles all CRUD operations against the PostgreSQL "students" table.
- */
+
 public class Controller {
 
     // ── FXML-injected controls ───────────────────────────────────────────────
@@ -43,10 +40,10 @@ public class Controller {
             return;
         }
 
-        // Populate ChoiceBox with all enum values
+
         cbYear.getItems().setAll(YearLevel.values());
 
-        // Bind table columns to Student properties
+
         colId.setCellValueFactory(    data -> data.getValue().idProperty().asObject());
         colName.setCellValueFactory(  data -> data.getValue().nameProperty());
         colCourse.setCellValueFactory(data -> data.getValue().courseProperty());
@@ -54,7 +51,6 @@ public class Controller {
 
         table.setItems(studentList);
 
-        // Row-click handler: populate input fields from the selected row
         table.setOnMouseClicked(e -> {
             Student selected = table.getSelectionModel().getSelectedItem();
             if (selected != null) {
@@ -69,7 +65,6 @@ public class Controller {
         loadData();
     }
 
-    // ── Data loading ─────────────────────────────────────────────────────────
 
     private void loadData() {
         studentList.clear();
@@ -91,7 +86,6 @@ public class Controller {
         }
     }
 
-    // ── CRUD handlers (called by FXML onAction) ───────────────────────────
 
     @FXML
     private void addStudent() {
@@ -185,12 +179,8 @@ public class Controller {
         showStatus("Fields cleared.", false);
     }
 
-    // ── Helpers ──────────────────────────────────────────────────────────────
 
-    /**
-     * Validates that no input field is empty.
-     * Shows a warning alert and returns false if any field is empty.
-     */
+
     private boolean validateInputs() {
         if (txtName.getText().trim().isEmpty() ||
                 txtCourse.getText().trim().isEmpty() ||
@@ -213,7 +203,6 @@ public class Controller {
                     ? "-fx-text-fill: #d32f2f;"
                     : "-fx-text-fill: #388e3c;");
         }
-        // Also print to console as a fallback
         System.out.println(message);
     }
 }

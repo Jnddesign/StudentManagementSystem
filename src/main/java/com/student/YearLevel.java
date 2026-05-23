@@ -17,10 +17,6 @@ public enum YearLevel {
         }
     }
 
-    /**
-     * Converts a display string (e.g. "1st Year") back to its enum constant.
-     * Returns null if not found.
-     */
     public static YearLevel fromString(String text) {
         for (YearLevel y : values()) {
             if (y.toString().equals(text)) return y;

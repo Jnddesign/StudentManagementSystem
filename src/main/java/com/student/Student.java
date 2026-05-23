@@ -29,7 +29,6 @@ public class Student {
     public String getCourse()    { return course.get(); }
     public String getYearLevel() { return yearLevel.get(); }
 
-    // --- property getters (required by TableView cell factories) ---
     public IntegerProperty idProperty()        { return id; }
     public StringProperty  nameProperty()      { return name; }
     public StringProperty  courseProperty()    { return course; }
